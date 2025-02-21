@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Mountains+of+Christmas:wght@400;700&display=swap');
+
+@import url(sections/header.css);
+
+body {
+    background-color: #AFA8A8;
+}
+
+:root {
+    --moutains-of-christmas: "Mountains of Christmas";
+    --roboto: "Roboto"
+   --primary-color: #AFA8A8;
+   --secondary-color: #970D0F;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    list-style: none;
+}
+
+

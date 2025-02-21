@@ -1,0 +1,74 @@
+.header_nav {
+    display: flex;
+    overflow: hidden;
+    justify-content: space-between;
+}
+
+.header__logo {
+    flex: 1;
+    display: flex;
+
+    position: relative;
+    align-items: center;
+
+    padding: 20px;
+}
+
+.header__logo h4 {
+    padding-left: 180.1px;
+    padding-top: 51.6px;
+
+    font-weight: 1000;
+    font-size: 36px;
+    font-family: var(--moutains-of-christmas);
+    color: var(--secondary-color);
+}
+
+.header_menu {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    gap: 100px;
+}
+    
+.header__menu li {
+        margin-top: 80px;
+        margin-right: 90px;
+        font-family: var(--roboto);
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 20px;
+        cursor: pointer;
+        
+        list-style: none;
+
+        display: inline-block;
+        
+       
+}
+    
+
+
+.header__menu-order {
+    margin-right: 180.1px;
+    margin-top: 68px;
+    
+    border: none;
+    outline: none;
+    background-color: rgb(32, 32, 32);
+
+    color: #fff;
+    font-weight: 500;
+    text-align: center;
+    font-size: 18px;
+    line-height: 23px;
+
+    min-width: 212px;
+    border-radius: 36px;
+    height: 43px;
+
+    cursor: pointer;
+}
