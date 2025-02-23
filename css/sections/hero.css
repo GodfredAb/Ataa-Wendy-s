@@ -1,0 +1,104 @@
+.hero-content {
+    display: flex;
+    min-height: calc(100vh - 74px);
+    overflow: hidden;
+    flex-direction: row;
+}
+
+.hero-content__info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+
+    position: relative;
+    z-index: 5;
+    margin-top: 70px;
+}
+
+.hero-content__info  h1{
+    font-family: var(--moutains-of-christmas);
+    font-weight: 1000;
+    font-size: 96px;
+    line-height: 40px;
+    color: var(--secondary-color);
+    
+    
+
+    padding-left: 180.1px;
+}
+
+.hero-content__info pre {
+    padding-left: 100.1px;
+    padding-top: 200px;
+
+    font-family: var(--roboto);
+    font-size: 40px;
+    font-weight: 500;
+
+    opacity: 0.65;
+}
+
+.hero-content__buttons {
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+
+    padding-left: 180.1px;
+    margin-top: 50px;
+    gap: 64px; 
+}
+
+.hero-content__explore-button {
+    width: fit-content;
+
+    padding: 20px 30px;
+    margin-left: 20px;
+  
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 23px;
+    font-family: var(--roboto);
+    color: #fff;
+  
+    border: none;
+    outline: none;
+    background: black;
+    border-radius: 64px;
+    cursor: pointer;
+    
+}
+
+.hero-content__explore-button img {
+    width: 14px;
+    height: 14px;
+    object-fit: contain;
+  
+    margin-left: 21px;  
+}
+
+.hero-content__contact-button {
+    width: 60px;
+    height: 60px;
+    background-color: black;
+    margin-top: 5px;
+    border-radius: 36px;
+    line-height: 5px;
+}
+
+.hero-content__contact-button img {
+    width: 28.24px;
+    height: 28.24px;
+    object-fit: contain;
+    align-items: center;
+
+    cursor: pointer;
+}
+
+.hero-content__buttons p {
+    margin-top: 35px;
+    margin-left: -50px;
+
+    font-family: var(--roboto);
+    font-size: 16px;
+    line-height: 19px;
+}
