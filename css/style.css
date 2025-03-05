@@ -1,14 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Mountains+of+Christmas:wght@400;700&display=swap');
 
-@import url(sections/header.css);
-@import url(sections/hero.css);
 
 body {
     background-color: #AFA8A8;
 }
 
 :root {
-    --moutains-of-christmas: "Mountains of Christmas";
+    --moutains-of-christmas: "Mountains of Christmas", consolas;
     --roboto: "Roboto"
    --primary-color: #AFA8A8;
    --secondary-color: #970D0F;
@@ -26,4 +24,311 @@ a {
     list-style: none;
 }
 
+/* Header Section */
+.header_nav {
+    display: flex;
+    overflow: hidden;
+    justify-content: space-between;
+}
 
+.header__logo {
+    flex: 1;
+    display: flex;
+
+    position: relative;
+    align-items: center;
+
+    padding: 20px;
+}
+
+.header__logo h4 {
+    padding-left: 180.1px;
+    padding-top: 51.6px;
+
+    font-weight: 1000;
+    font-size: 36px;
+    font-family: var(--moutains-of-christmas);
+    color: var(--secondary-color);
+}
+
+.header_menu {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    gap: 100px;
+}
+    
+.header__menu li {
+        margin-top: 80px;
+        margin-right: 90px;
+        font-family: var(--roboto);
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 20px;
+        cursor: pointer;
+        
+        list-style: none;
+
+        display: inline-block;
+        
+       
+}
+    
+
+
+.header__menu-order {
+    margin-right: 180.1px;
+    margin-top: 68px;
+    
+    border: none;
+    outline: none;
+    background-color: rgb(32, 32, 32);
+
+    color: #fff;
+    font-weight: 500;
+    text-align: center;
+    font-size: 18px;
+    line-height: 23px;
+
+    min-width: 212px;
+    border-radius: 36px;
+    height: 43px;
+
+    cursor: pointer;
+}
+
+/* Hero Section */
+.hero-content {
+    display: flex;
+    min-height: calc(100vh - 74px);
+    overflow: hidden;
+    justify-content: space-around;
+}
+
+.hero-content__info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    position: relative;
+    z-index: 5;
+    margin-top: 70px;
+
+}
+
+.hero-content__info  h1{
+    font-family: var(--moutains-of-christmas);
+    font-weight: 450;
+    font-size: 180px;
+    line-height: 170px;
+    color: var(--secondary-color);
+    
+    object-fit: contain;
+    padding-left: 180.1px;
+}
+
+.hero-content__info pre {
+    padding-left: 100.1px;
+    padding-top: 100px;
+
+    font-family: var(--roboto);
+    font-size: 40px;
+    font-weight: 500;
+
+    opacity: 0.55;
+}
+
+.hero-content__buttons {
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+
+    padding-left: 180.1px;
+    margin-top: 120px;
+    gap: 64px; 
+}
+
+.hero-content__explore-button {
+    width: fit-content;
+
+    
+    margin-left: 20px;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+  
+    font-weight: 500;
+    line-height: 4px;
+    font-family: var(--roboto);
+    font-size: 20px;
+    color: #fff;
+  
+    border: none;
+    outline: none;
+    background: black;
+    border-radius: 64px;
+    cursor: pointer;
+
+    width: 240px;
+    height: 61px;
+
+    border: 2px solid red;
+    
+}
+
+.hero-content__explore-button img {
+    width: 36px;
+    height: 36px;
+    background: #fff;
+    border-radius: 20px;
+    object-fit: contain;
+  
+     margin-left: 70px;
+}
+
+.hero-content__contact-button {
+    display: flex;
+    gap: 60px;
+
+    width: 60px;
+    height: 60px;
+    background-color: black;
+    border-radius: 36px;
+    
+
+    cursor: pointer;
+}
+
+.hero-content__contact-button img {
+    width: 28.24px;
+    height: 28.24px;
+    object-fit: contain;
+    align-items: center;
+    justify-content: center;
+
+    margin: 15px;
+
+}
+
+.hero-content__buttons p {
+    margin: 30px;
+    margin-left: -50px;
+
+    font-family: var(--roboto);
+    font-size: 20px;
+    line-height: 19px;
+
+    text-shadow: 0.5px 0.5px;
+}
+
+.hero-content__image {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    overflow: hidden;
+    
+}
+
+/* hero content testimonial */
+
+.hero-content__testimonial {
+    padding: 32px 64px;
+  
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  
+    background: #c1bfbf; 
+  }
+  
+  .hero-content__customer {
+    flex: 1;
+    gap: 10px;
+  }
+  
+  .hero-content__customer h4 {
+    font-size: 62px;
+    font-weight: 400;
+    font-family: var(--moutains-of-christmas)
+  }
+  
+  .hero-content__customer p {
+    font-size: 16px;
+    font-weight: 400;
+    font-family: var(--moutains-of-christmas);
+    color: var(--secondary-color);
+    opacity: 0.5;
+  }
+  
+  .hero-content__review {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  
+    padding-left: 20px;
+    border-left: 1px solid rgba(2, 2, 2, 0.1);
+    min-width: 200px;
+
+  }
+  
+  .hero-content__review img {
+    width: 42px;
+    height: 42px;
+    object-fit: contain;
+  }
+  
+  .hero-content__review p {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 32px;
+    font-family: var(--moutains-of-christmas);
+    color: var(--secondary-color);
+    opacity: 0.8
+  }
+  
+  /* hero images display */
+
+  .hero-content__images {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  
+  
+    position: relative;
+  }
+  
+  .hero-content__images div {
+    padding: 32px 64px;
+  
+    flex: 1;
+    display: flex;
+    align-items: center;
+  
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  
+  .hero-content__images-dish1 {
+    border-bottom: 8px solid cream;
+    flex: 1;
+
+  }
+  
+  .hero-content__images-dish1 img {
+    width: 758px;
+    height: 758px;
+  }
+
+  .hero-content__button img {
+    object-fit: contain;
+    margin-left: 32px;
+  }
